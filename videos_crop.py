@@ -43,7 +43,7 @@ def trim_and_crop(input_dir, output_dir, clip_params):
 
     input_filepath = os.path.join(input_dir, video_name + '.mp4')
     if not os.path.exists(input_filepath):
-        print('Input file %d does not exist, skipping' % (input_filepath))
+        print('Input file %s does not exist, skipping' % (input_filepath))
         return
 
     h, w = get_h_w(input_filepath)
